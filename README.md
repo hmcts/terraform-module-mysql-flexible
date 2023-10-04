@@ -98,8 +98,12 @@ module "common_tags" {
 
 | Name | Description |
 |------|-------------|
+| <a name="output_fqdn"></a> [fqdn](#output\_fqdn) | n/a |
+| <a name="output_instance_id"></a> [instance\_id](#output\_instance\_id) | n/a |
+| <a name="output_password"></a> [password](#output\_password) | n/a |
 | <a name="output_resource_group_location"></a> [resource\_group\_location](#output\_resource\_group\_location) | n/a |
 | <a name="output_resource_group_name"></a> [resource\_group\_name](#output\_resource\_group\_name) | n/a |
+| <a name="output_username"></a> [username](#output\_username) | n/a |
 <!-- END_TF_DOCS -->
 
 ## Contributing
