@@ -79,7 +79,7 @@ variable "mysql_server_configuration" {
 variable "storage_size_gb" {
   description = "The size of the storage in GB."
   type        = number
-  default     = 5
+  default     = 20
 }
 
 variable "storage_auto_grow" {

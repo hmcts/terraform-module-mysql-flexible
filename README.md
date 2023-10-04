@@ -91,7 +91,7 @@ module "common_tags" {
 | <a name="input_sku_name"></a> [sku\_name](#input\_sku\_name) | The SKU to deploy MySQL Flexible server with. | `string` | `"GP_Standard_D2ds_v4"` | no |
 | <a name="input_storage_auto_grow"></a> [storage\_auto\_grow](#input\_storage\_auto\_grow) | Should the storage size auto grow? | `bool` | `true` | no |
 | <a name="input_storage_io_scaling_enabled"></a> [storage\_io\_scaling\_enabled](#input\_storage\_io\_scaling\_enabled) | Should storage IO scaling be enabled? | `bool` | `false` | no |
-| <a name="input_storage_size_gb"></a> [storage\_size\_gb](#input\_storage\_size\_gb) | The size of the storage in GB. | `number` | `5` | no |
+| <a name="input_storage_size_gb"></a> [storage\_size\_gb](#input\_storage\_size\_gb) | The size of the storage in GB. | `number` | `20` | no |
 | <a name="input_user_assigned_identity_id"></a> [user\_assigned\_identity\_id](#input\_user\_assigned\_identity\_id) | The ID of the user assigned managed identity to assign to MSSQL server. This should have the correct permisisons to read users, groups and service principals. | `string` | `null` | no |
 
 ## Outputs
