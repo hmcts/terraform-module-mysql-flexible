@@ -19,6 +19,7 @@ resource "azurerm_mysql_flexible_server" "this" {
   delegated_subnet_id    = var.delegated_subnet_id
   private_dns_zone_id    = "/subscriptions/1baf5470-1c3e-40d3-a6f7-74bfbce4b348/resourceGroups/core-infra-intsvc-rg/providers/Microsoft.Network/privateDnsZones/privatelink.mysql.database.windows.net"
   sku_name               = var.sku_name
+  tags                   = var.common_tags
 
   storage {
     auto_grow_enabled  = var.storage_auto_grow
