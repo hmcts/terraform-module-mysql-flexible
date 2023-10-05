@@ -8,7 +8,7 @@ The virtual network you are deploying flexible server into must have a private D
 
 ```hcl
 module "mysql" {
-  source = "../"
+  source = "github.com/hmcts/terraform-module-mysql-flexible?ref=main"
   env    = var.env
 
   product   = "platops"
