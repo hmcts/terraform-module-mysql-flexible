@@ -4,6 +4,8 @@ Terraform module for [MySQL Flexible Server](https://learn.microsoft.com/en-gb/a
 
 ## Example
 
+The virtual network you are deploying flexible server into must have a private DNS zone link to the privatelink.mysql.database.azure.com private DNS zone.
+
 ```hcl
 module "mysql" {
   source = "../"

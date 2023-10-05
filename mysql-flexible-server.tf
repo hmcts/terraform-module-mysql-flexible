@@ -17,7 +17,7 @@ resource "azurerm_mysql_flexible_server" "this" {
   backup_retention_days  = var.backup_retention_days
   version                = var.mysql_version
   delegated_subnet_id    = var.delegated_subnet_id
-  private_dns_zone_id    = "/subscriptions/1baf5470-1c3e-40d3-a6f7-74bfbce4b348/resourceGroups/core-infra-intsvc-rg/providers/Microsoft.Network/privateDnsZones/privatelink.mysql.database.windows.net"
+  private_dns_zone_id    = "/subscriptions/1baf5470-1c3e-40d3-a6f7-74bfbce4b348/resourceGroups/core-infra-intsvc-rg/providers/Microsoft.Network/privateDnsZones/privatelink.mysql.database.azure.com"
   sku_name               = var.sku_name
   tags                   = var.common_tags
 
