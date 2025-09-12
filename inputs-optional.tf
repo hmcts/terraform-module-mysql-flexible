@@ -111,3 +111,9 @@ variable "high_availability" {
   type        = bool
   default     = false
 }
+
+variable "high_availability_environments" {
+  description = "List of environments that should force high availability regardless of what high_availability is set to."
+  type        = list(string)
+  default     = ["ptl", "perftest", "stg", "aat", "prod"]
+}
