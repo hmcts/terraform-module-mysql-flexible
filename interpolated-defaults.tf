@@ -10,8 +10,7 @@ locals {
   resource_group          = var.existing_resource_group_name == null ? azurerm_resource_group.new[0].name : var.existing_resource_group_name
   resource_group_location = var.existing_resource_group_name == null ? azurerm_resource_group.new[0].location : var.location
 
-  high_availability_environments = ["ptl", "perftest", "stg", "aat", "prod"]
-  high_availability              = var.high_availability == true || contains(local.high_availability_environments, var.env)
+  high_availability = var.high_availability == true || contains(var.high_availability_environments, var.env)
 }
 
 data "azuread_group" "admin_group" {

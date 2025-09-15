@@ -79,6 +79,7 @@ module "common_tags" {
 | <a name="input_env"></a> [env](#input\_env) | Environment value | `string` | n/a | yes |
 | <a name="input_existing_resource_group_name"></a> [existing\_resource\_group\_name](#input\_existing\_resource\_group\_name) | Name of existing resource group to deploy resources into | `string` | `null` | no |
 | <a name="input_high_availability"></a> [high\_availability](#input\_high\_availability) | Overrides the automatic selection of high availability mode for the MySQL Flexible Server. Generally you shouldn't set this yourself. | `bool` | `false` | no |
+| <a name="input_high_availability_environments"></a> [high\_availability\_environments](#input\_high\_availability\_environments) | List of environments that should force high availability regardless of what high\_availability is set to. | `list(string)` | <pre>[<br/>  "ptl",<br/>  "perftest",<br/>  "stg",<br/>  "aat",<br/>  "prod"<br/>]</pre> | no |
 | <a name="input_location"></a> [location](#input\_location) | Target Azure location to deploy the resource | `string` | `"UK South"` | no |
 | <a name="input_minimum_tls_version"></a> [minimum\_tls\_version](#input\_minimum\_tls\_version) | The minimum TLS version. | `string` | `"1.2"` | no |
 | <a name="input_mysql_admin_password"></a> [mysql\_admin\_password](#input\_mysql\_admin\_password) | The password of the admin account, if a value is not provided one will be generated. | `string` | `null` | no |
