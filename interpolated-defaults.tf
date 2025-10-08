@@ -5,7 +5,7 @@ locals {
   name                    = var.name != null ? var.name : "${var.product}-${var.component}"
   server_name             = "${local.name}-${var.env}"
   is_prod                 = length(regexall(".*(prod).*", var.env)) > 0
-  admin_group             = local.is_prod ? "DTS Platform Operations SC" : "DTS Platform Operations"
+  admin_group             = var.admin_group != null ? var.admin_group : (local.is_prod ? "DTS Platform Operations SC" : "DTS Platform Operations")
   admin_password          = var.mysql_admin_password == null ? random_password.mysql_password[0].result : var.mysql_admin_password
   resource_group          = var.existing_resource_group_name == null ? azurerm_resource_group.new[0].name : var.existing_resource_group_name
   resource_group_location = var.existing_resource_group_name == null ? azurerm_resource_group.new[0].location : var.location

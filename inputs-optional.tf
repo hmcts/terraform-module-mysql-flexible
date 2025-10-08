@@ -117,3 +117,9 @@ variable "high_availability_environments" {
   type        = list(string)
   default     = ["ptl", "perftest", "stg", "aat", "prod"]
 }
+
+variable "admin_group" {
+  type        = string
+  description = "The name of the Azure AD group to assign as administrators to the MySQL server."
+  default     = null
+}
