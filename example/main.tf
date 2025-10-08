@@ -5,7 +5,7 @@ module "mysql" {
   product   = "platops"
   component = "example"
 
-  common_tags                  = module.common_tags.common_tags
+  common_tags = module.common_tags.common_tags
 
   mysql_databases = {
     example = {
